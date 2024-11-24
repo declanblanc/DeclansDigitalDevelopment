@@ -11,8 +11,9 @@ defineProps({
   <div class="greetings">
     <h1 class="green">{{ msg }}</h1>
     <p id="bio">
-      Software Engineer. Passionate about solving problems, delivering
-      solutions, and working with others.
+      Software Engineer. <br />
+      Passionate about solving problems, delivering solutions, and working with
+      others.
     </p>
     <h2 class="socials">
       <a href="https://www.linkedin.com/in/declanblanc/" target="_blank">
