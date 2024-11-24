@@ -7,7 +7,7 @@ import HelloWorld from './components/HelloWorld.vue'
   <header>
     <img
       alt="My Profile Photo"
-      class="logo"
+      class="profile-photo"
       src="./assets/me.png"
       width="225"
       height="225"
@@ -23,21 +23,27 @@ import HelloWorld from './components/HelloWorld.vue'
     </div>
   </header>
 
-  <RouterView />
+  <div id="routView">
+    <RouterView />
+  </div>
 </template>
 
 <style scoped>
-img {
-  border-radius: 180px;
-}
 header {
   line-height: 1.5;
   max-height: 100vh;
 }
 
-.logo {
+#routView {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+.profile-photo {
+  border-radius: 180px;
   display: block;
-  margin: 0 auto 2rem;
+  margin: 0 auto 0rem;
 }
 
 nav {
@@ -90,6 +96,10 @@ nav a:first-of-type {
 
     padding: 1rem 0;
     margin-top: 1rem;
+  }
+
+  .profile-photo {
+    margin: 0 2rem 0 0;
   }
 }
 </style>

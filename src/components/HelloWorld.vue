@@ -47,18 +47,21 @@ h1 {
   font-size: 2.6rem;
   position: relative;
   /* top: 10px; */
+  margin: 0;
 }
 
 #bio {
   font-size: 1.2rem;
-  margin: 1rem 0;
+  margin: 0;
   text-align: center;
 }
 .socials a {
+  margin: 0;
   padding: 16px;
 }
 
 .socials {
+  margin: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -66,6 +69,7 @@ h1 {
 
 h3 {
   font-size: 1.2rem;
+  margin: 0;
 }
 
 .greetings h1,
