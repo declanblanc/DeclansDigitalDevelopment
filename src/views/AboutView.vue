@@ -37,11 +37,15 @@
 </template>
 
 <style>
+p {
+  margin: 0.25rem;
+}
+
 .ab-group {
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 80vw;
+  width: 50vw;
 }
 
 .ab-group p {
@@ -57,7 +61,12 @@
   flex-direction: column;
 }
 
-/* I need to make changes when the display width is below 650px */
+@media (max-width: 1000px) {
+  .ab-group {
+    width: 80vw;
+  }
+}
+
 @media (max-width: 650px) {
   .about {
     width: 80vw;
