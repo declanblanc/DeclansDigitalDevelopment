@@ -1,5 +1,6 @@
 // Import css styling from assets folder
-import './assets/main.css'
+// import './assets/main.css'
+import './assets/my.css'
 
 // Import createApp function from Vue (magic spell)
 import { createApp } from 'vue'

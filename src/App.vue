@@ -15,14 +15,13 @@ import HelloWorld from './components/HelloWorld.vue'
 
     <div class="wrapper">
       <HelloWorld msg="Declan Blanchard" />
-
       <nav>
         <RouterLink to="/">Home</RouterLink>
+        <RouterLink to="/blog">Blog</RouterLink>
         <RouterLink to="/about">About</RouterLink>
       </nav>
     </div>
   </header>
-
   <div id="routView">
     <RouterView />
   </div>
@@ -54,7 +53,7 @@ nav {
 }
 
 nav a.router-link-exact-active {
-  color: var(--color-text);
+  color: #cb0001;
 }
 
 nav a.router-link-exact-active:hover {
@@ -79,7 +78,7 @@ nav a:first-of-type {
     padding-right: calc(var(--section-gap) / 2);
   }
 
-  .logo {
+  .profile-photo {
     margin: 0 2rem 0 0;
   }
 

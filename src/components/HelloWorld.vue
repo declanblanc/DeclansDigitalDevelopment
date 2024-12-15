@@ -9,45 +9,49 @@ defineProps({
 
 <template>
   <div class="greetings">
-    <h1 class="green">{{ msg }}</h1>
+    <div id="nameSocial">
+      <h1 class="green">{{ msg }}</h1>
+      <h2 class="socials">
+        <a href="https://www.linkedin.com/in/declanblanc/" target="_blank">
+          <img src="../assets/socials/LinkedIn.png" width="24" height="24" />
+        </a>
+        <a href="https://www.github.com/declanblanc/">
+          <img src="../assets/socials/GitHub.svg" width="24" height="24" />
+        </a>
+        <a href="https://www.twitter.com/declanblanc">
+          <img src="../assets/socials/twitter.png" width="24" height="24" />
+        </a>
+        <!-- <a href="declanblanc@gmail.com" class="light">
+          <img src="../assets/socials/mail_b.png" width="24" height="24" />
+        </a> -->
+        <a href="mailto:declanblanc@gmail.com" class="dark">
+          <img src="../assets/socials/mail_w.png" width="24" height="24" />
+        </a>
+      </h2>
+    </div>
     <hr />
     <p id="bio">
       Software Engineer. <br />
       Passionate about solving problems, delivering solutions, and working with
       others.
     </p>
-    <h2 class="socials">
-      <a href="https://www.linkedin.com/in/declanblanc/" target="_blank">
-        <img src="../assets/socials/LinkedIn.png" width="24" height="24" />
-      </a>
-      <a href="https://www.github.com/declanblanc/">
-        <img src="../assets/socials/GitHub.svg" width="24" height="24" />
-      </a>
-      <a href="https://www.twitter.com/declanblanc">
-        <img src="../assets/socials/twitter.png" width="24" height="24" />
-      </a>
-      <!-- <a href="declanblanc@gmail.com" class="light">
-        <img src="../assets/socials/mail_b.png" width="24" height="24" />
-      </a> -->
-      <a href="mailto:declanblanc@gmail.com" class="dark">
-        <img src="../assets/socials/mail_w.png" width="24" height="24" />
-      </a>
-    </h2>
-    <h3>
-      You’ve successfully navigated to my portfolio page! This site was created
-      using
-      <a href="https://vite.dev/" target="_blank" rel="noopener">Vite</a> +
-      <a href="https://vuejs.org/" target="_blank" rel="noopener">Vue 3</a>.
-    </h3>
   </div>
 </template>
 
 <style scoped>
+hr {
+  margin: 5px 0 8px 0;
+}
+#nameSocial {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 h1 {
   font-weight: 500;
   font-size: 2.6rem;
   position: relative;
-  /* top: 10px; */
+  line-height: 1;
   margin: 0;
 }
 
@@ -57,8 +61,11 @@ h1 {
   text-align: center;
 }
 .socials a {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
   margin: 0;
-  padding: 16px;
+  padding: 0px 16px;
 }
 
 .socials {
@@ -66,6 +73,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: -10px;
 }
 
 h3 {
