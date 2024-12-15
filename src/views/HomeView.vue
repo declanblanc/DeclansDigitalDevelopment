@@ -2,7 +2,8 @@
   <div id="about-me" class="about">
     <h2>👋 About Me</h2>
     <p>
-      Hi, I'm <strong>Declan Blanchard</strong>, a passionate and driven
+      <strong>Thank you so much for checking out my website!</strong> <br />
+      My name is <strong>Declan Blanchard</strong>, a passionate and driven
       <strong>Computer Science</strong> student at NJIT 🏫 I’ve immersed myself
       in coding 💻, community engagement, and leadership roles, blending
       technical expertise with a human-centered approach.

@@ -30,8 +30,8 @@ defineProps({
       </h2>
     </div>
     <hr />
+    <strong>Fullstack Developer</strong>
     <p id="bio">
-      Software Engineer. <br />
       Passionate about solving problems, delivering solutions, and working with
       others.
     </p>
@@ -47,6 +47,11 @@ hr {
   justify-content: space-between;
   align-items: center;
 }
+
+unl {
+  color: rgb(205, 205, 205);
+  text-decoration: underline;
+}
 h1 {
   font-weight: 500;
   font-size: 2.6rem;
@@ -54,16 +59,22 @@ h1 {
   line-height: 1;
   margin: 0;
 }
-
-#bio {
+hr {
+  margin: 2px 0px 2px 0px;
+}
+strong {
   font-size: 1.2rem;
+  color: rgb(205, 205, 205);
+}
+#bio {
+  font-size: 1.7rem;
   margin: 0;
   text-align: center;
 }
 .socials a {
-  /* display: flex;
+  display: flex;
   justify-content: center;
-  align-items: center; */
+  align-items: center;
   margin: 0;
   padding: 0px 16px;
 }
