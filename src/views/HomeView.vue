@@ -45,7 +45,7 @@ strong {
 }
 .ab-group {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 50vw;
@@ -57,25 +57,24 @@ strong {
 .about {
   text-align: center;
   min-height: 80vh;
-  width: 50vw;
+  /* width: 50vw; */
   display: flex;
   align-items: center;
-
   flex-direction: column;
 }
-
-@media (max-width: 1000px) {
+@media (min-width: 1150px) {
+  .about {
+    width: 550px;
+  }
   .ab-group {
-    width: 80vw;
+    width: 650px;
+    flex-direction: row;
   }
 }
 
 @media (max-width: 650px) {
   .about {
     width: 80vw;
-  }
-  .ab-group {
-    flex-direction: column;
   }
 }
 </style>

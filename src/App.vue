@@ -4,24 +4,26 @@ import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
-  <header>
-    <img
-      alt="My Profile Photo"
-      class="profile-photo"
-      src="./assets/me.png"
-      width="225"
-      height="225"
-    />
-
-    <div class="wrapper">
-      <HelloWorld msg="Declan Blanchard" />
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/blog">Blog</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-    </div>
-  </header>
+  <div id="header-container">
+    <header>
+      <img
+        alt="My Profile Photo"
+        class="profile-photo"
+        src="./assets/me.png"
+        width="225"
+        height="225"
+      />
+      <div class="wrapper">
+        <HelloWorld msg="Declan Blanchard" />
+        <nav>
+          <RouterLink to="/">Home</RouterLink>
+          <RouterLink to="/blog">Blog</RouterLink>
+          <RouterLink to="/projs">Projects</RouterLink>
+          <RouterLink to="/about">About</RouterLink>
+        </nav>
+      </div>
+    </header>
+  </div>
   <div id="routView">
     <RouterView />
   </div>
@@ -29,15 +31,27 @@ import HelloWorld from './components/HelloWorld.vue'
 
 <style scoped>
 header {
+  /* width: 80vw; */
   line-height: 1.5;
   max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#header-container {
+  display: flex;
+  align-items: center;
 }
 
 #routView {
+  /* width: 80vw; */
   margin: 0;
   padding: 0;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 .profile-photo {
   border-radius: 180px;
