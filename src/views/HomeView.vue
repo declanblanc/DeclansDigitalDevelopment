@@ -12,9 +12,8 @@
       I thrive on tackling complex challenges 🛠️, whether it's building a
       compiler, developing Chrome extensions, or leading community initiatives
       like <strong>campus resource mapping</strong> to improve student life.
-      With experience in <code>React</code>, <code>Vue</code>, and
-      <code>C++</code>, I aim to create software that not only works but
-      enhances the user experience.
+      With experience in frontend and backend development, I aim to create
+      software that not only works but enhances the user experience.
     </p>
 
     <div class="ab-group">
@@ -33,10 +32,28 @@
       🎮, connecting with friends 👬🏼, or spending quality time with my
       girlfriend and our two cats 🐾❤️.
     </p>
+    <br />
+    <p>
+      You can view the GitHub repository for this project
+      <a href="https://github.com/declanblanc/DeclansDigitalDevelopment">here</a
+      >. <br /><br />
+      If you have any questions or you're interested in working together, feel
+      free to
+      <a href="mailto:declanblanc@gmail.com">email me</a>, message me on
+      <a href="https://www.linkedin.com/in/declanblanc/">LinkedIn</a>, or
+      contact me via Discord <code>@declanblanc</code>
+    </p>
   </div>
 </template>
 
 <style scoped>
+code {
+  color: aqua;
+}
+a {
+  color: aqua;
+  text-decoration: underline;
+}
 p {
   margin: 0.25rem;
 }

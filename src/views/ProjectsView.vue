@@ -59,4 +59,10 @@ a {
   color: aqua;
   text-decoration: underline;
 }
+
+@media (min-width: 1024px) {
+  .proj-container {
+    width: 1000px;
+  }
+}
 </style>

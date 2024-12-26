@@ -32,7 +32,7 @@ import { RouterLink, RouterView } from 'vue-router'
     embedding my Numerical Integration Calculator project so that it can be used
     from this site. I imagine it won’t be too difficult but those are typically
     some famous last words so we shall see! [You can check it out now on the
-    <RouterLink to="/projs">Projects Page!</RouterLink>]
+    <RouterLink to="/projects">Projects Page!</RouterLink>]
   </p>
   <h2 id="school">School</h2>
   <p>
@@ -122,6 +122,6 @@ h3 {
 
 a {
   text-decoration: underline;
-  color: aqua;
+  color: rgb(111, 111, 111);
 }
 </style>

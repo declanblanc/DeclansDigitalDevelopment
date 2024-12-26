@@ -1,9 +1,13 @@
 <script setup>
 import Dec1724 from '@/components/blogs/Dec1724.vue'
+import Dec2624 from '@/components/blogs/Dec2624.vue'
 </script>
 
 <template>
   <div class="blog-container">
+    <Dec2624 />
+    <hr />
+    <br />
     <Dec1724 />
   </div>
 </template>
