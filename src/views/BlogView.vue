@@ -4,28 +4,8 @@ import Dec2624 from '@/components/blogs/Dec2624.vue'
 </script>
 
 <template>
-  <div class="blog-container">
-    <Dec2624 />
-    <hr />
-    <br />
-    <Dec1724 />
-  </div>
+  <Dec2624 />
+  <Dec1724 />
 </template>
 
-<style scoped>
-.blog-container {
-  text-align: justify;
-  text-justify: inter-cluster;
-  border: solid rgb(120, 120, 120) 8px;
-  border-radius: 8px;
-  width: 80vw;
-  padding: 20px 30px;
-  margin: 2rem 0;
-}
-
-@media (min-width: 1024px) {
-  .blog-container {
-    width: 800px;
-  }
-}
-</style>
+<style scoped></style>
