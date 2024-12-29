@@ -1,8 +1,10 @@
 <template>
   <div id="about-me" class="about">
-    <h2>👋 About Me</h2>
+    <h2>👋 Hey</h2>
+    <strong>Thanks for checking out my website!</strong>
+    <br />
     <p>
-      <strong>Thank you so much for checking out my website!</strong> <br />
+      <br />
       My name is <strong>Declan Blanchard</strong>, a passionate and driven
       <strong>Computer Science</strong> student at NJIT 🏫 I’ve immersed myself
       in coding 💻, community engagement, and leadership roles, blending
@@ -30,10 +32,11 @@
     <p>
       When I’m not coding, you can find me in the gym 🏋️‍♂️, playing video games
       🎮, connecting with friends 👬🏼, or spending quality time with my
-      girlfriend and our two cats 🐾❤️.
+      girlfriend and our two cats 🐾❤️. To find out more about what I've been up
+      to, check out my <RouterLink to="/blog">Blog Page</RouterLink>!
     </p>
     <br />
-    <p>
+    <p id="details">
       You can view the GitHub repository for this project
       <a href="https://github.com/declanblanc/DeclansDigitalDevelopment">here</a
       >. <br /><br />
@@ -67,12 +70,16 @@ strong {
   justify-content: center;
   width: 50vw;
 }
-
+#details {
+  width: 50vw;
+  color: rgb(100, 100, 100);
+  text-align: center;
+}
 .ab-group p {
   margin: 0 1rem;
 }
 .about {
-  text-align: center;
+  text-align: justify;
   min-height: 80vh;
   /* width: 50vw; */
   display: flex;
@@ -81,11 +88,14 @@ strong {
 }
 @media (min-width: 1150px) {
   .about {
-    width: 550px;
+    width: 850px;
   }
   .ab-group {
-    width: 650px;
+    width: 850px;
     flex-direction: row;
+  }
+  #details {
+    width: 550px;
   }
 }
 

@@ -1,5 +1,6 @@
 <template>
   <div class="proj-container">
+    <div class="proj-title">Web Based Numerical Integration Calculator</div>
     <div class="proj-desc">
       <p>
         When I was attending Raritan Valley Community College taking Calculus 2
@@ -32,6 +33,12 @@
 </template>
 
 <style scoped>
+.proj-title {
+  text-align: left;
+  color: white;
+  font-weight: 600;
+  font-size: 2rem;
+}
 .proj-container {
   text-align: justify;
   text-justify: inter-cluster;
