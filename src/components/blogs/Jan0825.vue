@@ -85,6 +85,11 @@ h3 {
   text-align: center;
 }
 
+img {
+  width: 100%;
+  height: 100%;
+}
+
 a {
   text-decoration: underline;
   color: rgb(111, 111, 111);
